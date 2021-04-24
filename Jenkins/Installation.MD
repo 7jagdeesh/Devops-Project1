@@ -24,6 +24,24 @@ find /usr/lib/jvm/java-1.8* | head -n 3
 #JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
 export JAVA_HOME
 PATH=$PATH:$JAVA_HOME
+#After setting java path
+
+[root@ip-172-31-29-97 ~]# cat ~/.bash_profile
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64
+export JAVA_HOME
+PATH=$PATH:$JAVA_HOME:$HOME
+
+export PATH
+[root@ip-172-31-29-97 ~]#
+
 # To set it permanently update your .bash_profile
 source ~/.bash_profile
 ```
